@@ -1,6 +1,6 @@
 {
   "name": "@fr33m0nk/lusha-client",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Lusha API client",
   "private": false,
   "main": "./dist/index.js",
