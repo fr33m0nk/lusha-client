@@ -10,7 +10,7 @@
 ### [Person query API](https://www.lusha.com/docs/#person-api)
 
 ```typescript
-import {personQuery, PersonQueryParams, Person, APIError} from "./index";
+import {personQuery, PersonQueryParams, Person} from "./index";
 
 const queryParams: PersonQueryParams = {
     firstName: "James", 
@@ -22,7 +22,7 @@ personQuery("API_KEY")(queryParams).then((r: Person) => {
   console.log("\n Yay Person Search \n")
   console.log(r)
   console.log("\n ------- \n")
-}).catch((error: APIError) => {
+}).catch((error) => {
   console.log("\n Nay Person Search \n")
   console.log(error)
 })
@@ -31,7 +31,7 @@ personQuery("API_KEY")(queryParams).then((r: Person) => {
 ### [Company query API](https://www.lusha.com/docs/#company-api)
 
 ```typescript
-import {companyQuery, CompanyQueryParams, Company, APIError} from "./index";
+import {companyQuery, CompanyQueryParams, Company} from "./index";
 
 const companyQueryParams: CompanyQueryParams = {domain: "google.com"}
 
@@ -39,7 +39,7 @@ companyQuery("API_KEY")(companyQueryParams).then((r: Company) => {
   console.log("\n Yay Company Search \n")
   console.log(r)
   console.log("\n ------- \n")
-}).catch((error: APIError) => {
+}).catch((error) => {
   console.log("\n Nay Company Search \n")
   console.log(error)
 })
